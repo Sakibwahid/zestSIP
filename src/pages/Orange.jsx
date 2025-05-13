@@ -1,5 +1,7 @@
 import React from 'react';
 import PageCard from '../components/PageCard';
+import OrangeImage from '../assets/Orange.png';
+
 function Orange() {
   const info = [
     {
@@ -7,7 +9,7 @@ function Orange() {
       name: 'Orange',
       flavour: 'Orange apple',
       description: 'Experience the perfect blend of fresh,juicy oranges in every sip. Our smoothie is packed with natural vitamins, a brust of flavours and no adde preservaties',
-      image: 'src/assets/Orange.png',
+      image: OrangeImage,
       price: '6.99',
       bgColor: 'bg-[radial-gradient(circle,_rgba(216,124,74,0.6)_7%,_rgba(216,124,74,1)_35%)]',
     }
