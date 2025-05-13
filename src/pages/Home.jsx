@@ -1,53 +1,54 @@
 import React from 'react';
 import JuiceCard from '../components/Juicecard';
 import Navbar from '../components/Navbar';
-
+import GreenImage from '../assets/Green.png';
+import OrangeImage from '../assets/Orange.png';
+import BerryImage from '../assets/Berry.png';
+import StrawberryImage from '../assets/Strawberry.png';
 
 function Home() {
-
   const juices = [
     {
       number: '01',
       name: 'Green',
       description: 'Green apple',
-      image: 'src/assets/Green.png',
+      image: GreenImage,
       price: '5.99',
       hoverColor: '#6B8E23',
-       linkTo: '/green'
-    },  
+      linkTo: '/green'
+    },
     {
       number: '02',
       name: 'Orange',
       description: 'Fresh orange flavour',
-      image: 'src/assets/Orange.png',
+      image: OrangeImage,
       price: '5.99',
       hoverColor: '#D87C4A',
-       linkTo: '/orange'
+      linkTo: '/orange'
     },
     {
       number: '03',
       name: 'Berry',
       description: 'Absoulute dense',
-      image: 'src/assets/Berry.png',
+      image: BerryImage,
       price: '5.99',
       hoverColor: '#6A4C92',
-       linkTo: '/berry'
-
+      linkTo: '/berry'
     },
     {
       number: '04',
       name: 'Strawbery',
       description: 'Strawberry mix',
-      image: 'src/assets/Strawberry.png',
+      image: StrawberryImage,
       price: '5.99',
       hoverColor: '#D15D72',
-       linkTo: '/strawberry'
+      linkTo: '/strawberry'
     },
   ];
+
   return (
-    
     <div className='h-screen'>
-      <Navbar></Navbar>
+      <Navbar />
       <div className='w-full h-full grid grid-cols-2 md:grid-cols-4 items-center shadow-xl rounded-2xl'>
         {juices.map((juice, index) => (
           <JuiceCard
@@ -55,14 +56,14 @@ function Home() {
             number={juice.number}
             name={juice.name}
             description={juice.description}
-            hoverColor={juice.hoverColor} 
+            hoverColor={juice.hoverColor}
             image={juice.image}
             linkTo={juice.linkTo}
           />
         ))}
       </div>
     </div>
-)
+  );
 }
 
 export default Home;
