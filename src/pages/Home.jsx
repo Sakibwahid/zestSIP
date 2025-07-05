@@ -49,7 +49,7 @@ function Home() {
   return (
     <div className='h-screen'>
       <Navbar />
-      <div className='w-full h-full grid grid-cols-2 md:grid-cols-4 items-center shadow-xl rounded-2xl'>
+      <div className='w-full h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center shadow-xl rounded-2xl'>
         {juices.map((juice, index) => (
           <JuiceCard
             key={index}

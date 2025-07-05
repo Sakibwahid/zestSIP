@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const JuiceCard = ({ number, name, description, image, hoverColor, linkTo}) => {
     return (
         <div
-            className="group bg-white h-full flex justify-center items-center transition-all duration-700"
+            className="group h-screen bg-white flex justify-center items-center transition-all duration-700"
             onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = hoverColor;
                 e.currentTarget.style.color = 'white';

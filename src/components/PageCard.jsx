@@ -16,15 +16,15 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
     };
 
     return (
-        <div className={`h-screen p-6 ${bgColor} font-lato`}>
+        <div className={` p-6 ${bgColor} font-lato`}>
             <Navbar />
             <h1
                 className="absolute text-[180px] -translate-x-1/2 -translate-y-1/2 font-bold text-white opacity-80 top-1/3 left-1/2 pointer-events-none"
             >
                 {name.toUpperCase()}
             </h1>
-            <div className="mx-6 h-full grid grid-cols-3">
-                <div className="flex font-light justify-start items-end col-span-1">
+            <div className="mx-6 h-full md:h-screen grid grid-cols-1 md:grid-cols-3">
+                <div className="order-3 md:order-1 flex font-light justify-start items-end col-span-1">
                     <div>
                         <h3 className="text-white text-4xl font-lato mt-4">
                             {name}
@@ -47,7 +47,7 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1">
+                <div className="order-1 md:order-2 col-span-1">
                     <div className="flex justify-center items-start">
                         <img
                             src={image}
@@ -56,7 +56,7 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
                         />
                     </div>
                 </div>
-                <div className="flex flex-col text-xs gap-3 justify-center items-end col-span-1">
+                <div className="order-2 my-6 flex md:flex-col text-xs gap-3 md:justify-center items-end col-span-1">
                     <button
                         className={`${selectedSize === "250ml" ? "bg-black text-white" : "bg-white text-black"
                             } rounded-full w-fit p-6`}
