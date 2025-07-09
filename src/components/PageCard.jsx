@@ -16,7 +16,7 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
     };
 
     return (
-        <div className={` p-6 ${bgColor} font-lato`}>
+        <div className={`w-fit p-6 ${bgColor} font-lato`}>
             <Navbar />
             <h1
                 className="absolute text-[180px] -translate-x-1/2 -translate-y-1/2 font-bold text-white opacity-80 top-1/3 left-1/2 pointer-events-none"
