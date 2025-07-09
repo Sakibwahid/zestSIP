@@ -7,7 +7,7 @@ function Navbar() {
   const { cartCount } = useContext(CartContext)
   return (
     <nav className={`${useLocation().pathname === '/' ? 'text-black' : 'text-white'} md:fixed w-full z-50 top-0 left-0`}>
-      <div className='w-full md:px-4 py-4 flex items-center bg-transparent justify-between'>
+      <div className='w-full px-4 py-4 flex items-center bg-transparent justify-between'>
         <div>
           <Link to="/"><div className='font-bold font-lexend text-2xl'>zestSIP</div></Link>
           </div>

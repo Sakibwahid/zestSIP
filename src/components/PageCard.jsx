@@ -16,13 +16,15 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
     };
 
     return (
-        <div className={`overflow-hidden p-6 ${bgColor} font-lato`}>
+        <div className={`p-6 ${bgColor} font-lato`}>
             <Navbar />
-            <h1
-                className="absolute text-[180px] -translate-x-1/2 -translate-y-1/2 font-bold text-white opacity-80 top-1/3 left-1/2 pointer-events-none"
-            >
-                {name.toUpperCase()}
-            </h1>
+            <div className="">
+                <h1
+                    className="absolute text-[180px] -translate-x-1/2 -translate-y-1/2 font-bold text-white opacity-80 top-1/3 left-1/2 pointer-events-none"
+                >
+                    {name.toUpperCase()}
+                </h1>
+            </div>
             <div className="mx-6 h-full md:h-screen grid grid-cols-1 md:grid-cols-3">
                 <div className="order-3 md:order-1 flex font-light justify-start items-end col-span-1">
                     <div>

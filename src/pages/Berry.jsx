@@ -15,7 +15,7 @@ function Berry() {
     }
   ];
   return (
-    <div className=''>
+    <div className='relative'>
       {info.map((info, index) => (
           <PageCard
             key={index}
