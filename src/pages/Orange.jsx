@@ -15,7 +15,7 @@ function Orange() {
     }
   ];
   return (
-    <div className='relative'>
+    <div className=''>
       {info.map((info, index) => (
           <PageCard
             key={index}
