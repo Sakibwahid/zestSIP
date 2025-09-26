@@ -10,7 +10,7 @@ function Navbar() {
     <nav
       className={`
         ${location.pathname === '/' ? 'text-black' : 'text-white'}
-        md:fixed w-full z-50 top-0 left-0
+        md: w-full z-50 top-0 left-0
         bg-white/30 backdrop-blur-md
       `}
       style={{
