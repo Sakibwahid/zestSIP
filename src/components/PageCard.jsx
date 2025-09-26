@@ -16,11 +16,11 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
     };
 
     return (
-        <div className={`relative w-full flex flex-col items-center p-6 ${bgColor} font-lato`}>
+        <div className={`relative flex flex-col items-center p-6 ${bgColor} font-lato`}>
             <Navbar />
             <div className="absolute flex items-center justify-center whitespace-nowrap w-full overflow-hidden text-[180px] -translate-x-1/2 -translate-y-1/2 md:-translate-y-1/3 lg:-translate-y-1/4 font-bold text-white top-1/3 left-1/2 pointer-events-none">
                 <h1
-                    className="text-[180px] opacity-80"
+                    className="text-[180px] opacity-20"
                 >
                     {name.toUpperCase()}
                 </h1>
@@ -58,7 +58,7 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
                         />
                     </div>
                 </div>
-                <div className="order-2 my-6 flex md:flex-col text-xs gap-3 md:justify-center items-end col-span-1">
+                <div className="z-10 order-2 my-6 flex md:flex-col text-xs gap-3 md:justify-center items-end col-span-1">
                     <button
                         className={`${selectedSize === "250ml" ? "bg-black text-white" : "bg-white text-black"
                             } rounded-full w-fit p-6`}
