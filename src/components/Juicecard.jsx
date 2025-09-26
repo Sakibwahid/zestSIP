@@ -23,10 +23,10 @@ const JuiceCard = ({ number, name, description, image, hoverColor, linkTo }) => 
             }}
         >
             <div className='relative'>
-                <div className='relative flex justify-center items-center'>
+                <div className='relative h-full flex justify-center items-center'>
                     <img src={image}
                         alt={name}
-                        className="block origin-center md:scale-0 md:opacity-0 group-hover md:group-hover:opacity-100 md:group-hover:scale-100 duration-1000 inset-0 w-60 h-96 object-contain transition-all  ease-out">
+                        className="block h-[250px] origin-center md:scale-0 md:opacity-0 group-hover md:group-hover:opacity-100 md:group-hover:scale-100 duration-1000 object-contain transition-all easeout">
                     </img>
                 </div>
                 <h3 className="text-md font-light hover:white">

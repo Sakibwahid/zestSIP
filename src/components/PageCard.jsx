@@ -16,8 +16,10 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
     };
 
     return (
-        <div className={`relative flex flex-col items-center p-6 ${bgColor} font-lato`}>
+        <div className={`relative flex flex-col items-center  ${bgColor} font-lato`}>
             <Navbar />
+            <div className="p-6">
+                
             <div className="absolute flex items-center justify-center whitespace-nowrap w-full overflow-hidden text-[180px] -translate-x-1/2 -translate-y-1/2 md:-translate-y-1/3 lg:-translate-y-1/4 font-bold text-white top-1/3 left-1/2 pointer-events-none">
                 <h1
                     className="text-[180px] opacity-20"
@@ -54,7 +56,7 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
                         <img
                             src={image}
                             alt={name}
-                            className="z-10 hover:rotate-12 transition-all duration-500 object-cover w-3/4 h-3/4"
+                            className="z-10 hover:rotate-12 transition-all duration-500 object-cover h-[300px] md:h-[400px] lg:h-[500px] mt-10"
                         />
                     </div>
                 </div>
@@ -76,6 +78,7 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
                 </div>
             </div>
         </div>
+            </div>
     );
 };
 
