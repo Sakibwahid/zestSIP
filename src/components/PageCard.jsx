@@ -16,7 +16,7 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
     };
 
     return (
-        <div className={`relative flex flex-col items-center  ${bgColor} font-lato`}>
+        <div className={`min-h-screen overflow-y-auto relative flex flex-col items-center  ${bgColor} font-lato`}>
             <Navbar />
             <div className="p-6">
                 
@@ -39,12 +39,12 @@ const PageCard = ({ number, name, price, image, description, flavour, bgColor })
                             {flavour} - <span className="text-2xl font-semibold">{currentPrice}</span>
                         </p>
                         <p className="text-sm text-gray-100 mt-2 mb-2">{description}</p>
-                        <div className="flex items-center  gap-4">
+                        <div className="flex items-center gap-4">
                             <button onClick={additems} className={`${cartStatus === "Added to cart" ? "bg-gray-400 text-white" : "bg-white text-black"
-                                } w-fit font-lato font-light rounded-3xl flex mt-4 px-4 py-2 gap-4`}>{cartStatus}
+                                }  text-sm font-lato font-light rounded-lg md:rounded-xl lg:rounded-2xl flex mt-4 px-4 py-2 gap-4`}>{cartStatus}
                             </button>
                             {cartCount > 0 && (
-                                <p className="text-gray-300 mt-4 px-4 py-2">
+                                <p className="flex-1 text-gray-300 mt-4 px-4 py-2">
                                     {cartCount} {cartCount === 1 ? "item has" : "items have"} been added.
                                 </p>
                             )}

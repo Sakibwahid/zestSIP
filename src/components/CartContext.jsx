@@ -79,8 +79,7 @@ export const CartProvider = ({ children }) => {
 
     const decreaseQuantity = (number) => {
         setCartItems((prevItems) => {
-            const updatedItems = prevItems.map((item) =>
-                {item.number === number && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item});
+            const updatedItems = prevItems.map((item) =>  item.number === number && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item );
             const newCount = updatedItems.reduce((acc, item) => acc + item.quantity, 0);
             setCartCount(newCount);
             localStorage.setItem("cartCount", newCount);
